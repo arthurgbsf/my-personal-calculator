@@ -36,11 +36,6 @@
     border-radius: 1.5%
 }
 
-.textScreen{
-    overflow-wrap: break-word;
-
-}
-
 .buttons{
     height: 98%;
     padding: 0 repeat(3, 2px);

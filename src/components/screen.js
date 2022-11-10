@@ -9,11 +9,11 @@ const Screen = () => {
 
 
 
-    const { fontSize, ref } = useFitText();
+    const { fontSize, ref } = useFitText({maxFontSize:250});
 
     return(
         <div className="screen">
-             <span ref={ref} style={{ fontSize, height: 110, width: 370}} className="textScreen">
+            <span ref={ref} style={{ fontSize, height: 110, width: 280, }} className="textScreen">
                 {calcData.num ? calcData.num : calcData.res}
             </span>
         </div>
