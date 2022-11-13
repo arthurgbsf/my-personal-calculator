@@ -27,9 +27,7 @@
 }
 
 .screen{
-    display:grid;
     font-size: 50px;
-    grid-template-columns: 1fr;
     width:385px;
     height:120px;
     background-color:#4a3e33;

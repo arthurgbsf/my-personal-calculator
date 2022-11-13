@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import useFitText from 'use-fit-text';
+import { Textfit } from 'react-textfit';
 import { DataContext } from '../context/dataContext';
 
 
@@ -8,14 +8,11 @@ const Screen = () => {
     const {calcData} = useContext(DataContext)
 
 
-
-    const { fontSize, ref } = useFitText({maxFontSize:250});
-
     return(
         <div className="screen">
-            <span ref={ref} style={{ fontSize, height: 110, width: 280, }} className="textScreen">
+           <Textfit max={70}  mode="single" className="Screen">
                 {calcData.num ? calcData.num : calcData.res}
-            </span>
+            </Textfit>
         </div>
     )
 }
